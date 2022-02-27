@@ -23,22 +23,25 @@ class ViewController: UIViewController {
     // シャッターボタン
     @IBOutlet weak var cameraButton: UIButton!
  
-   
+    let focus = UIImage(named: "focus.png")
 
+    @IBOutlet weak var focusview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let backbtn = UIBarButtonItem()
         backbtn.title = "撮り直す"
+        //self.navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.backBarButtonItem = backbtn
         let W = self.view.frame.width
         let H = self.view.frame.height
        
         transimg.frame = CGRect(x: 0, y: H*0.2+W*0.7, width: W, height:H-H*0.2-W*0.7)
+        focusview.frame = CGRect(x: 0, y: H*0.2, width: W, height:W*0.7 )
         backimg.frame = CGRect(x: 0, y: 0, width: W, height:H*0.2 )
         underbar.frame = CGRect(x: 0, y: H*0.85, width: W, height:H*0.15 )
         cameraButton.frame = CGRect(x: W*0.5-H*0.05, y: H*0.875, width: H*0.1 , height:H*0.1 )
         
-       
+        focusview.image = focus
         setupCaptureSession()
         setupDevice()
         setupInputOutput()
@@ -62,7 +65,7 @@ class ViewController: UIViewController {
         self.photoOutput?.capturePhoto(with: settings, delegate: self as! AVCapturePhotoCaptureDelegate)
         cameraButton.isEnabled = false
      
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.7){
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.9){
             self.cameraButton.isEnabled = true
             self.performSegue(withIdentifier: "tosecond", sender: nil)
         }
@@ -163,10 +166,7 @@ extension ViewController{
         cameraButton.layer.borderWidth = 5
         cameraButton.clipsToBounds = true
         cameraButton.layer.cornerRadius = min(cameraButton.frame.width, cameraButton.frame.height) / 2
-        cameraButton.layer.shadowOpacity = 0.7
-        cameraButton.layer.shadowRadius = 3
-        cameraButton.layer.shadowColor = UIColor.black.cgColor
-        cameraButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
         cameraButton.layer.borderColor = UIColor(red: 0, green: 0, blue: 224, alpha: 0.6).cgColor
         cameraButton.layer.borderWidth = 5.0
         

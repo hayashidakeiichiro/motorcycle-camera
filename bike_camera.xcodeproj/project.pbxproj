@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		8253FE3127C9CA9100A376E9 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253FE3027C9CA9100A376E9 /* secondViewController.swift */; };
 		8253FE3327C9DB5B00A376E9 /* sample.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8253FE3227C9DB5B00A376E9 /* sample.jpeg */; };
-		8253FE3527CA117000A376E9 /* nik2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8253FE3427CA117000A376E9 /* nik2.mlmodel */; };
-		8253FE3727CA118100A376E9 /* nik.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8253FE3627CA118100A376E9 /* nik.csv */; };
+		8285FB4827CA8BDB002661C3 /* focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8285FB4727CA8BDB002661C3 /* focus.png */; };
+		8285FB4A27CB0E81002661C3 /* nik.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8285FB4927CB0E81002661C3 /* nik.mlmodel */; };
+		8285FB4C27CB0F2D002661C3 /* nik.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8285FB4B27CB0F2D002661C3 /* nik.csv */; };
 		8294B6D927C8D83700F75639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294B6D827C8D83700F75639 /* AppDelegate.swift */; };
 		8294B6DB27C8D83700F75639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294B6DA27C8D83700F75639 /* SceneDelegate.swift */; };
 		8294B6DD27C8D83700F75639 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294B6DC27C8D83700F75639 /* ViewController.swift */; };
@@ -22,8 +23,9 @@
 /* Begin PBXFileReference section */
 		8253FE3027C9CA9100A376E9 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		8253FE3227C9DB5B00A376E9 /* sample.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpeg; sourceTree = "<group>"; };
-		8253FE3427CA117000A376E9 /* nik2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = nik2.mlmodel; sourceTree = "<group>"; };
-		8253FE3627CA118100A376E9 /* nik.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nik.csv; sourceTree = "<group>"; };
+		8285FB4727CA8BDB002661C3 /* focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus.png; sourceTree = "<group>"; };
+		8285FB4927CB0E81002661C3 /* nik.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = nik.mlmodel; sourceTree = "<group>"; };
+		8285FB4B27CB0F2D002661C3 /* nik.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nik.csv; sourceTree = "<group>"; };
 		8294B6D527C8D83700F75639 /* bike_camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bike_camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294B6D827C8D83700F75639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8294B6DA27C8D83700F75639 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +75,9 @@
 				8294B6E327C8D83800F75639 /* LaunchScreen.storyboard */,
 				8294B6E627C8D83800F75639 /* Info.plist */,
 				8253FE3227C9DB5B00A376E9 /* sample.jpeg */,
-				8253FE3427CA117000A376E9 /* nik2.mlmodel */,
-				8253FE3627CA118100A376E9 /* nik.csv */,
+				8285FB4727CA8BDB002661C3 /* focus.png */,
+				8285FB4927CB0E81002661C3 /* nik.mlmodel */,
+				8285FB4B27CB0F2D002661C3 /* nik.csv */,
 			);
 			path = bike_camera;
 			sourceTree = "<group>";
@@ -137,11 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8285FB4827CA8BDB002661C3 /* focus.png in Resources */,
 				8253FE3327C9DB5B00A376E9 /* sample.jpeg in Resources */,
-				8253FE3727CA118100A376E9 /* nik.csv in Resources */,
 				8294B6E527C8D83800F75639 /* LaunchScreen.storyboard in Resources */,
 				8294B6E227C8D83800F75639 /* Assets.xcassets in Resources */,
 				8294B6E027C8D83700F75639 /* Main.storyboard in Resources */,
+				8285FB4C27CB0F2D002661C3 /* nik.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +159,8 @@
 				8253FE3127C9CA9100A376E9 /* secondViewController.swift in Sources */,
 				8294B6DD27C8D83700F75639 /* ViewController.swift in Sources */,
 				8294B6D927C8D83700F75639 /* AppDelegate.swift in Sources */,
+				8285FB4A27CB0E81002661C3 /* nik.mlmodel in Sources */,
 				8294B6DB27C8D83700F75639 /* SceneDelegate.swift in Sources */,
-				8253FE3527CA117000A376E9 /* nik2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
