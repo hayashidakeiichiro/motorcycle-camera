@@ -74,8 +74,8 @@ class secondViewController: UIViewController {
             DispatchQueue.main.async {
                 //self.img1.image = UIImage(cgImage: inpimg2!)
           
-                //self.btn1.setTitle(res1, for: .normal)
-                //self.btn2.setTitle(res2, for: .normal)
+                self.btn1.setTitle(res1, for: .normal)
+                self.btn2.setTitle(res2, for: .normal)
                 self.btn3.setTitle(res3, for: .normal)
                 
             }
